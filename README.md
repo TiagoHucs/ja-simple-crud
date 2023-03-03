@@ -1,2 +1,2 @@
-# ja-simple-crud
+# js-simple-crud
 crud simples com javascript puro
