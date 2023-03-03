@@ -1,5 +1,7 @@
 // criando um array vazio para guatdar os items
-let cadastrados = [{nome:'Juca'},{nome:'Jorge'}];
+let cadastrados = [
+    {nome:'Juca',dataNascimento: '1985-06-06'},
+    {nome:'Jorge',dataNascimento: '1981-12-31'}];
 
 let txtInputNome = document.getElementById('txtInputNome');
 let txtInputNascimento = document.getElementById('txtInputNascimento');
@@ -30,11 +32,9 @@ function atualizaListaHtml() {
 }
 
 function excluir(index) {
-    console.log(index);
     if(cadastrados.length > -1){
         cadastrados.splice(index, 1);
     }
-    console.log(cadastrados);
     atualizaListaHtml();
 }
 
