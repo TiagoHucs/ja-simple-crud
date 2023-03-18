@@ -8,6 +8,17 @@ let txtInputNascimento = document.getElementById('txtInputNascimento');
 let btnCadastrar = document.getElementById('btnCadastrar');
 
 btnCadastrar.onclick = function () {
+    if(txtInputNome.value == null || txtInputNome.value == ''){
+        alert("Campo nome é obrigatório")
+    }else if(txtInputNascimento.value == null || txtInputNascimento.value == ''){
+        alert("Campo data de nascimento é obrigatório")
+    }  else{
+        cadastrar();
+    }
+}
+
+
+function cadastrar(){
     cadastrados.push({
         nome: txtInputNome.value,
         dataNascimento: txtInputNascimento.value,
